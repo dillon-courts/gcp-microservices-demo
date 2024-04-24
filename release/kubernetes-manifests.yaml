@@ -485,7 +485,6 @@ spec:
     metadata:
       labels:
         app: cartservice
-      labels:
         backstage.io/kubernetes-id: cartservice
     spec:
       serviceAccountName: default
