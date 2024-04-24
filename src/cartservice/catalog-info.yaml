@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: ms-demo-cartservice
   annotations:
-    backstage.io/kubernetes-id: test-k8s-component
+    backstage.io/kubernetes-id: cartservice
     github.com/project-slug: dillon-courts/ms-demo-frontend
     backstage.io/techdocs-ref: dir:.
 spec:

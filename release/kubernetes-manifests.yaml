@@ -229,6 +229,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend
+  labels:
+    backstage.io/kubernetes-id: frontend
 spec:
   selector:
     matchLabels:
@@ -237,6 +239,7 @@ spec:
     metadata:
       labels:
         app: frontend
+        backstage.io/kubernetes-id: frontend
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
@@ -316,6 +319,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: frontend
+  labels:
+    backstage.io/kubernetes-id: frontend
 spec:
   type: ClusterIP
   selector:
@@ -470,6 +475,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: cartservice
+  labels:
+    backstage.io/kubernetes-id: cartservice
 spec:
   selector:
     matchLabels:
@@ -478,6 +485,8 @@ spec:
     metadata:
       labels:
         app: cartservice
+      labels:
+        backstage.io/kubernetes-id: cartservice
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
@@ -522,6 +531,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: cartservice
+  labels:
+    backstage.io/kubernetes-id: cartservice
 spec:
   type: ClusterIP
   selector:
@@ -799,6 +810,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: adservice
+  labels:
+    backstage.io/kubernetes-id: adservice
 spec:
   selector:
     matchLabels:
@@ -807,6 +820,7 @@ spec:
     metadata:
       labels:
         app: adservice
+        backstage.io/kubernetes-id: adservice
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
@@ -852,6 +866,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: adservice
+  labels:
+    backstage.io/kubernetes-id: test-k8s-component
 spec:
   type: ClusterIP
   selector:
