@@ -4,7 +4,7 @@ metadata:
   name: ms-demo-cartservice
   annotations:
     backstage.io/kubernetes-id: cartservice
-    github.com/project-slug: dillon-courts/ms-demo-frontend
+    github.com/project-slug: dillon-courts/gcp-microservices-demo
     backstage.io/techdocs-ref: dir:.
 spec:
   type: service

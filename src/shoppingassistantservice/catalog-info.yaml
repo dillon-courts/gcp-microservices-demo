@@ -1,9 +1,9 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: ms-demo-adservice
+  name: ms-demo-shoppingassistantservice
   annotations:
-    backstage.io/kubernetes-id: adservice
+    backstage.io/kubernetes-id: shoppingassistantservice
     github.com/project-slug: dillon-courts/gcp-microservices-demo
     backstage.io/techdocs-ref: dir:.
 spec:

@@ -231,6 +231,7 @@ metadata:
   name: frontend
   labels:
     backstage.io/kubernetes-id: frontend
+    portService: ms-demo-frontend
 spec:
   selector:
     matchLabels:
