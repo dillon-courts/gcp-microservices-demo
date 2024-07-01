@@ -5,7 +5,6 @@ metadata:
   annotations:
     backstage.io/kubernetes-id: productcatalogservice
     github.com/project-slug: dillon-courts/gcp-microservices-demo
-    backstage.io/techdocs-ref: dir:.
 spec:
   type: service
   lifecycle: unknown
